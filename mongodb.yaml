@@ -11,7 +11,7 @@
     ansible.builtin.package:
      name: mongodb-org
      state: present
-     enabled: yes
+     
 
   - name: Update bindIp from 127.0.0.1 to 0.0.0.0
     ansible.builtin.replace:
@@ -23,7 +23,7 @@
     ansible.builtin.service:
       name: mongod
       state: restarted
-
+      enabled: yes
 
 
 
