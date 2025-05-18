@@ -42,7 +42,7 @@
   
   - name: Create service file
     ansible.builtin.copy:
-     src: /home/ec2-user/ansible_roboshop/Catalogue Service
+     src: /home/ec2-user/ansible_roboshop/catalogue.service
      dest: /etc/systemd/system/catalogue.service
 
   - name: Reload systemd daemon
