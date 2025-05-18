@@ -69,7 +69,8 @@
       state: present
   
   - name: Load MongoDB data from master-data.js
-    ansible.builtin.command: mongosh --host mongodb.bhavana.store </app/db/master-data.js
+    ansible.builtin.shell: mongosh --host mongodb.bhavana.store < /app/db/master-data.js
+
 
 
   
