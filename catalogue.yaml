@@ -42,7 +42,7 @@
   
   - name: Create service file
     ansible.builtin.copy:
-     src: /home/ec2-user/ansible_roboshop/catalogue.service
+     src: catalogue.service
      dest: /etc/systemd/system/catalogue.service
 
   - name: Reload systemd daemon
@@ -60,7 +60,7 @@
  
   - name: copy mongoclient repo
     ansible.builtin.copy:
-     src: /home/ec2-user/ansible_roboshop/mongoclient.repo
+     src: mongoclient.repo
      dest: /etc/yum.repos.d/mongo.repo
 
   - name: Install mongoclient
