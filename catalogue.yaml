@@ -37,8 +37,8 @@
 
   - name: Run npm install in /app directory
     ansible.builtin.command: npm install
-      args:
-      chdir: /app
+    args:
+     chdir: /app
   
   - name: Create service file
     ansible.builtin.copy:
