@@ -46,7 +46,7 @@
      dest: /etc/systemd/system/catalogue.service
 
   - name: Reload systemd daemon
-    ansible.builtin.command: systemctl daemon-reload
+    ansible.builtin.shell: systemctl daemon-reload
 
   - name: Enable catalogue service
     ansible.builtin.systemd:
